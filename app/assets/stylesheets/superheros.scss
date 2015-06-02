@@ -10,6 +10,7 @@ body {
   color: white;
   font-family: "Hurry Up";
   font-size: 20px;
+  color: $yellow;
 }
 
 a {
@@ -45,6 +46,7 @@ a {
 .superhero {
   padding-left: 6vw;
   padding-right: 6vw;
+  padding-top:90px;
 }
 .superhero_list {
   padding-left: 8vw;
@@ -53,7 +55,7 @@ a {
 }
 #my-nav-bar {
     position: fixed;
-    top: 0px;
-    left: 20vw;
+    top: 10px;
+    left: 28.25vw;
 }
 
