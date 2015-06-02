@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Villains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Arch nemesis</th>
+      <th>Powers</th>
+      <th>Evil plan</th>
+      <th>Superhero</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @villains.each do |villain| %>
+      <tr>
+        <td><%= villain.name %></td>
+        <td><%= villain.arch_nemesis %></td>
+        <td><%= villain.powers %></td>
+        <td><%= villain.evil_plan %></td>
+        <td><%= villain.superhero %></td>
+        <td><%= link_to 'Show', villain %></td>
+        <td><%= link_to 'Edit', edit_villain_path(villain) %></td>
+        <td><%= link_to 'Destroy', villain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Villain', new_villain_path %>

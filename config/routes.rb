@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :villains
   root 'superheros#index'
   get 'superheros/', to: 'superheros#index', as: :index_superheros
   get 'superheros/new', to: 'superheros#new', as: :superhero_new

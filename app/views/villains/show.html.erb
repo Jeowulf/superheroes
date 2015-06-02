@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @villain.name %>
+</p>
+
+<p>
+  <strong>Arch nemesis:</strong>
+  <%= @villain.arch_nemesis %>
+</p>
+
+<p>
+  <strong>Powers:</strong>
+  <%= @villain.powers %>
+</p>
+
+<p>
+  <strong>Evil plan:</strong>
+  <%= @villain.evil_plan %>
+</p>
+
+<p>
+  <strong>Superhero:</strong>
+  <%= @villain.superhero %>
+</p>
+
+<%= link_to 'Edit', edit_villain_path(@villain) %> |
+<%= link_to 'Back', villains_path %>
