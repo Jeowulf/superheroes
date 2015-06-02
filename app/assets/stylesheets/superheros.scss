@@ -1,0 +1,59 @@
+// Place all the styles related to the superheroes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$yellow: #FF0;
+
+body {
+  background: black image-url("skyline.jpg") no-repeat fixed;
+  background-size: 100%;
+  color: white;
+  font-family: "Hurry Up";
+  font-size: 20px;
+}
+
+a {
+  color: $yellow;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  padding: 15px;
+  width: 600px;
+
+  h1 {
+    color: lighten($yellow, 35);
+  }
+
+  img.hero {
+    width: 100%;
+  }
+}
+
+.images {
+  width: 300px;
+}
+.images_show {
+  width: 30vw;
+}
+.superhero {
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+.superhero_list {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-top:90px;
+}
+#my-nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 20vw;
+}
+

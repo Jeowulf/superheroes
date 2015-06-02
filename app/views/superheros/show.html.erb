@@ -1,0 +1,20 @@
+<div class="superhero"><%= image_tag @superhero.image_url, :class => 'images_show' %> <br>
+NAME: <%= @superhero.name %> <br>
+POWERS: <%= @superhero.powers %> <br>
+SECRET IDENTITY: <%= @superhero.secret_identity %> <br>
+NEMESIS: <%= @superhero.nemesis %> <br>
+VILLAINS CAPTURED: <%=@superhero.villains_captured %> <br>
+Alliances: <%=@superhero.alliance %> <br>
+
+
+superhero_ID#: <%= @superhero.id %> <br>
+superhero_OBJECT_ID: <%= @superhero_object_id %> <br>
+
+
+<%= button_to "Back to index", index_superheros_path, method: :get %>
+<%= button_to "Edit this superhero", edit_superhero_path(@superhero), method: :get %>
+<%= button_to "Delete this superhero!", @superhero, method: :delete, data: {
+  confirm: "Are you sure you want to continue?  Confirming will permanently remove superhero from the database!"
+  } %>
+</div>
+

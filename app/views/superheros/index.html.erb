@@ -1,0 +1,11 @@
+<div class="superhero_list">
+The mighty... <%=button_to "Add new Superhero!", superhero_new_path, method: :get %>
+<br>
+
+
+<% @superhero.each do |sup| %>
+<%= image_tag sup.image_url, :class => 'images' %> <br>
+<%= link_to sup.name, superhero_path(sup)%> <br>
+<br>
+<% end %>
+</div>

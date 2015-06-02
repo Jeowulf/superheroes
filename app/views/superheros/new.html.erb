@@ -1,0 +1,44 @@
+Add a New superhero:
+
+<%= form_for @superhero do |sup| %>
+  <p>
+    <%= sup.label :name %><br>
+    <%= sup.text_field :name %>
+  </p>
+
+  <p>
+    <%= sup.label :powers %><br>
+    <%= sup.text_field :powers %>
+  </p>
+
+  <p>
+    <%= sup.label :secret_identity %><br>
+    <%= sup.text_field :secret_identity %>
+  </p>
+
+  <p>
+    <%= sup.label :nemesis %><br>
+    <%= sup.text_field :nemesis %>
+  </p>
+
+  <p>
+    <%= sup.label :villains_captured %><br>
+    <%= sup.number_field :villains_captured %>
+  </p>
+
+  <p>
+    <%= sup.label :image_url %><br>
+    <%= sup.text_field :image_url %>
+  </p>
+
+  <p>
+    <%= sup.label :alliance %><br>
+    <%= sup.text_field :alliance %>
+  </p>
+
+  <p>
+    <%= sup.submit %>
+  </p>
+<% end %>
+
+<%= button_to "Back to index", index_superheros_path, method: :get %>
